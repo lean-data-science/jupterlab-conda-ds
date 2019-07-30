@@ -1,6 +1,6 @@
 FROM leandatascience/jupyterlab-conda:latest
 
-RUN pip install numpy
-RUN pip install scipy
+RUN conda install -c anaconda numpy
+RUN conda install -c anaconda scipy
 RUN apt-get install liblzma-dev
-RUN pip install pandas==0.24.2
+RUN conda install -c anaconda pandas
